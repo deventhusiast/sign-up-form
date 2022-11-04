@@ -1,0 +1,71 @@
+*,*::before,*::after{
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+main{
+  width: 50vw;
+  height: 90vh;
+  position: relative;
+}
+.sidebar{
+  background: rgba(107,50,168,.9);
+  position: absolute;
+  height: 100%;
+  width: 30%;
+  top:0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.form{
+  right:0;
+  top: 0;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90vh;
+  width: 70%;
+  background: rgba(236,240,218,.2);
+}
+.title{
+  top:0;
+  position: absolute;
+  margin: 10px;
+}
+.form-group{
+  appearance: none;
+  background: #fff;
+  width: 100%;
+  padding: 25px;
+  box-shadow: 1px 2px 15px #c3c4b6;
+  display: flex;
+  flex-direction: column;
+}
+.exsist{
+  align-self: flex-start;
+  margin-top: 65px;
+}
+.names,.data,.pass{
+  display: flex;
+}
+div div{
+  margin: 10px;
+  display: grid;
+}
+button{
+  position: absolute;
+  left: 3px;
+  margin-top: 235px;
+}
+img{
+  width: calc(30% - 10%);
+  height: calc(100% -500px);
+}
