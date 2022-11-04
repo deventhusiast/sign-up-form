@@ -1,11 +1,15 @@
 *,*::before,*::after{
   box-sizing: border-box;
 }
+:root{
+  --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
 body{
   display: flex;
   justify-content: center;
   align-items: center;
   height: auto;
+  font-family: var(--system-ui)
 }
 main{
   width: 50vw;
