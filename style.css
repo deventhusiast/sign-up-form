@@ -9,7 +9,8 @@ body{
   justify-content: center;
   align-items: center;
   height: auto;
-  font-family: var(--system-ui)
+  font-family: var(--system-ui);
+  color: rgba(173,124,9);
 }
 main{
   width: 50vw;
@@ -17,14 +18,14 @@ main{
   position: relative;
 }
 .sidebar{
-  background: rgba(107,50,168,.9);
+  background: url('assets/nature-form.jpg');
   position: absolute;
   height: 100%;
   width: 30%;
   top:0;
   left: 0;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
 }
 .form{
@@ -54,12 +55,24 @@ main{
   display: flex;
   flex-direction: column;
 }
+input[type="password"]:invalid{
+  border: 1px solid red;
+}
+
 .exsist{
   align-self: flex-start;
   margin-top: 85px;
+  position: absolute;
+  top: calc(100% - 30%);
+
 }
-.names,.data,.pass{
+.input-groups{
   display: flex;
+  flex-flow: row wrap;
+}
+input{
+  border-radius: 5px;
+  border: 1px solid rgb(241,180,9);
 }
 div div{
   margin: 10px;
@@ -68,23 +81,51 @@ div div{
 button{
   position: absolute;
   left: 3px;
-  margin-top: 235px;
-  background: rgba(107,50,168,.9);
+  top: calc(100% - 30%);
+  background: rgba(240,191,76);
   color: #fff;
   border: none;
   border-radius: 5px;
   padding: 10px 25px;
   font-size: 22px;
 }
+.image{
+  position: relative;
+  background-color: rgba(0,0,0,.2);
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+  align-items: center;
+}
+.image::after{
+  content: " SHY FOX ";
+  color: rgba(0,0,0,.7);
+  font-weight: 900;
+  font-style: oblique;
+}
 img{
-  width: calc(30% - 10%);
-  height: calc(100% -500px);
+  width: calc(100% - 90%);
+  height: calc(100% - 30%);
+
 }
 a{
   text-decoration: none;
-  color: rgba(107,50,168,.9);
+  color: rgb(241,180,9);
   font-weight: 800;
 }
 button, .exsist{
   margin-left: 25px;
+}
+span{
+  position: absolute;
+  color: red;
+  font-size: 10px;
+  margin-left: 14px;
+  top: calc(100% - 38%);
+}
+input[type="text"]:focus,input[type="email"]:focus{
+  outline:none;
+  border: 3px solid rgb(241,180,9);
+  border-radius: 5px;
+  box-shadow: 1px 2px 8px #8d8a8a;
 }

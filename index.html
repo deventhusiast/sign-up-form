@@ -3,18 +3,21 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title></title>
+    <title>SingUp Form</title>
   </head>
   <body>
+    <script type="text/javascript" src="script.js" defer></script>
     <main>
       <aside class="sidebar">
-        <img src="assets/airplane.png" alt="">
+        <div class="image">
+        <img src="assets/logo.png" alt="">
+      </div>
       </aside>
       <section class='form'>
         <div class="title">This is a sample form</div>
         <form class="form-group" action="index.html" method="post">
           <legend>Sign up form</legend>
-          <div class="names">
+          <div class="names input-groups">
             <div>
             <label for="first_name">First Name:</label>
             <input type="text" id="first_name" name="first_name" value="">
@@ -24,7 +27,7 @@
             <input type="text" id="last_name" name="last_name" value="">
             </div>
           </div>
-          <div class="data">
+          <div class="data input-groups">
             <div>
             <label for="email">Email:</label>
             <input type="email" id="email" name="email" value="">
@@ -34,16 +37,17 @@
             <input type="text" id="phone" name="phone" value="" pattern="[0-9]+">
             </div>
           </div>
-          <div class="pass">
+          <div class="pass input-groups">
             <div>
             <label for="password">Password</label>
-            <input type="password" id="phone" name="phone" value="" pattern="[a-zA-Z0-9]+">
+            <input type="password" id="password" name="password" value="" pattern="[a-zA-Z0-9]+" required>
             </div>
             <div>
             <label for="confirm">Confirm</label>
             <input type="password" id="confirm" name="confirm" value="" pattern="[a-zA-Z0-9]+">
             </div>
           </div>
+          <!-- <span>*Passwords don`t match</span> -->
           <button type="submit" id ="signup"name="Sign up" value="Sign up">Sign up</button>
         </form>
         <div class="exsist">Already have an account? <a href="#">Log in</a></div>
