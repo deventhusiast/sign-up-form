@@ -3,6 +3,7 @@ let confirm = document.querySelector('#confirm')
 let signup = document.querySelector('#signup')
 let pass = document.querySelector('.pass')
 let warning =document.createElement('span')
+warning.classList.add = "warn"
 let form = document.querySelector('.form')
 const passwordvalidation = (password,confirm) =>{
   if(password.value !== confirm.value){

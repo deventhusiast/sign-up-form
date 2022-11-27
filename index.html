@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
     <link rel="stylesheet" href="style.css">
     <title>SingUp Form</title>
   </head>
@@ -14,8 +15,14 @@
       </div>
       </aside>
       <section class='form'>
-        <div class="title">This is a sample form</div>
+        <div class="header"><div class="title">This is not a real online service!
+          You know you need something like this in your life to help you relize your deepest dreams.
+           Sign up <span class="italisized">now</span> to get started.
+           <br>
+           <br>
+         You <span class="italisized">know</span> you want to.</div></div>
         <form class="form-group" action="index.html" method="post">
+          <div class="fields">
           <legend>Sign up form</legend>
           <div class="names input-groups">
             <div>
@@ -47,8 +54,9 @@
             <input type="password" id="confirm" name="confirm" value="" pattern="[a-zA-Z0-9]+">
             </div>
           </div>
+        </div>
           <!-- <span>*Passwords don`t match</span> -->
-          <button type="submit" id ="signup"name="Sign up" value="Sign up">Sign up</button>
+          <div class="btn-sign-up"><button type="submit" id ="signup"name="Sign up" value="Sign up">Create Account</button></div>
         </form>
         <div class="exsist">Already have an account? <a href="#">Log in</a></div>
       </section>
