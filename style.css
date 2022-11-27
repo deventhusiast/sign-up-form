@@ -195,7 +195,7 @@ input[type="text"]:focus,input[type="email"]:focus{
     height: 100vh;
   }
   .title{
-    font-size: 15px;
+    font-size: 20px;
     align-self: start;
   }
   .form-group{
